@@ -1,0 +1,1 @@
+Welcome! The World's your Oyster, or oyster for short, was created in 2024 for the Congressional App Challenge. It is meant to be a way to bring communities together by providng ideas for things for people to do outside of their communities. 
