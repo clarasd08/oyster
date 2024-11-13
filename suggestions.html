@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The World Is Your Oyster</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+  </header>
+  <main>
+    <h1>The World is Your Oyster</h1>
+    <nav>
+      <a onclick="window.location.href='index.html'">Back Home</a>
+      <a onclick="newActivty()">New Activity</a>
+    </nav>
+    <div id="activityDisplayArea">
+      <img id="activityImage" src="cacassets/philipsCollection.jpeg" alt="Picture of the Philips Collection">
+      <h1 id="nameLabel">Name: Browse the Philips Collection</h1>
+      <h2 id="wardsLabel">Ward: 2</h2>
+      <h2 id="costLabel">Cost: $20</h2>
+      <h2 id="categoriesLabel">Category: Arts and Culture</h2>
+      <h2 id="linkLabel">https://www.phillipscollection.org/</h2>
+    </div>
+    <div id="changeActivity">
+      <button id="backButton" onclick="back()">Back</button>
+      <button id="nextButton" onclick="next()">Next</button>
+
+    </div>
+    <div>
+      <div id="filter">
+      <label id="filterByLabel">Filter By:</label>
+      <select id="filterByDropdown" onclick="next()">
+        <option>All</option>
+        <option>Arts and Culture</option>
+        <option>Nature/Sports</option>
+        <option>Shopping</option>
+        <option>Food</option>
+        <option>Museums and History</option>
+      </select>
+      </div>
+    </div>
+  </main>
+  <div class="footer">
+    <p>@2024 The World is Your Oyster. All rights reserved.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

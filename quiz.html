@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <main>
+    <h1>The World is Your Oyster</h1>
+    <nav>
+      <a onclick="window.location.href='index.html'">Back Home</a>
+      <a onclick="newActivty()">New Activity</a>
+    </nav>
+    <div id="quiz">
+  <label class="quizItem" for="activityType">What type of activity are you looking for?</label>
+  <select id="activityType" name="activityType">
+    <option value="Nature/Sports">Nature/Sports</option>
+    <option value="Arts and Culture">Arts and Culture</option>
+    <option value="Museums and History">Museums and History</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Food">Food</option>
+  </select>
+
+  <label class="quizItem" for="budget">How much money do you want to/are willing to spend?</label>
+  <select id="budget" name="budget">
+    <option value="Free">Free Please!</option>
+    <option value="Minimal">Minimal Cost</option>
+    <option value="Medium">Medium Cost</option>
+    <option value="AnyCost">Any Cost is okay with me!</option>
+  </select>
+  
+  <label class="quizItem" for="ward">Is there a specific ward you want to visit?</label>
+  <select id="ward" name="ward">
+    <option value="Any">Any</option>
+    <option value="1">Ward 1</option>
+    <option value="2">Ward 2</option>
+    <option value="3">Ward 3</option>
+    <option value="4">Ward 4</option>
+    <option value="5">Ward 5</option>
+    <option value="6">Ward 6</option>
+    <option value="7">Ward 7</option>
+    <option value="8">Ward 8</option>
+    </select>
+
+  <label class="quizItem" for="numberPeople">How many people are doing the activity?</label>
+  <select id="numberPeople" name="number-people">
+    <option value="1">1</option>
+    <option value="2-4">2-4</option>
+    <option value="5+">5+</option>
+  </select>
+  
+  <label class="quizItem" for="kids">Are there any kids doing the activity?</label>
+  <select id="kids" name="kids">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+  </select>
+<br>
+  <button id="quizSubmit" type="submit" onclick="quiz()">Submit</button>
+</div>
+
+<br></br>
+    <div>
+      <p id="NumActivites">Activities for you:</p>
+    </div>
+    <div id="activityDisplayAreaQuiz">
+      <img id="activityImageQuiz" src="" alt="">
+      <h1 id="nameLabelQuiz">Your suggested activities will display here after you submit the quiz!</h1>
+      <h2 id="wardsLabelQuiz"></h2>
+      <h2 id="costLabelQuiz"></h2>
+      <h2 id="categoriesLabelQuiz"></h2>
+      <h2 id="linkLabelQuiz"></h2>
+    </div>
+    <div id="changeActivity">
+      <button id="backButton" onclick="backQuiz()">Back</button>
+      <button id="nextButton" onclick="nextQuiz()">Next</button>
+
+    </div>
+  </main>
+  <div class="footer">
+    <p>@2024 The World is Your Oyster. All rights reserved.</p>
+  </div>
+      <script src="script.js"></script>
+    </body>
+
+    </html>
